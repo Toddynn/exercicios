@@ -1,5 +1,138 @@
+body{
+    background-color: black;
+}
+
+.navbar{
+    background-color: #529e47;
+    padding-bottom: 0%;
+    padding-right: 0%;
+}
+
+.offcanvas{
+    background-color: black;
+    color: white;
+}
+
+.img-fluid{
+    border-radius: 50%;
+    width: 210px;
+    height: 200px;
+}
+
+.nomeUser{
+    position: static;
+    text-align: center;
+    padding-top: 20px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.d-inline-block{
+    border-radius: 10px;
+}
+
+.logo{
+    padding-top: 15px;
+    text-align: center;
+}
+
+#usuario{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bi{
+    position: relative;
+    bottom: 21px;
+    right: 13px;
+}
+
+.bi-wallet2{
+    position: static;
+    padding-right: 7px;
+}
+
+.bi-send{
+    position: static;
+    padding-right: 7px;
+}
+
+.bi-box-arrow-left{
+    position: static;
+    padding-right: 7px;
+}
+
+h1{
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    font-size: 16px;
+    text-align: center;
+    color: #707070;
+}
+
 .fundo{
-    background-color: rgb(211, 128, 128);
-    margin: 50px;
-    border-radius: 25px;
+    border-radius: 15px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 50px;
+}
+
+.p-3{
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    text-align: center; 
+}
+
+.btn{
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+.sub{
+    color: black;
+}
+
+footer{
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(10 21 81);
+}
+
+.btn:hover{
+    transform: scale(102%);
+}
+
+.d-inline-block:hover{
+    transform: scale(105%);
+}
+
+@media screen and (max-width: 500px) {
+    strong{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .col-6{
+        width: 600px;
+    }
 }
