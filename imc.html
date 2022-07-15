@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="index.css">
+    <script src="imc.js" defer></script>
     <title>IMC</title>
 </head>
 <nav class="navbar">
@@ -16,13 +18,65 @@
 </nav>
 <body>
     <main>
-        <header>
-
-        </header>
-        <div class="fundo">
-            <div class="container">
-
+        <div class="fundo animate__animated animate__fadeInLeftBig">
+            <header>
+                <h1>IMC</h1>
+            </header>
+            <div class="container-fluid">
+                <h4>Você está em forma? Confira!</h4>
+            <hr>
+                <div class="line1">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputName" class="form-label">Nome</label>
+                            <input type="text" class="form-control" required placeholder="Nome" aria-label="Nome">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" required placeholder="Email" aria-label="Email">
+                        </div>
+                    </form>
+                </div>
+            <br>
+                <div class="line2">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputCircunf" class="form-label">Circunferência Abdominal</label>
+                            <input type="number" class="form-control" id="inputCircunf" required placeholder="Circunferência (cm)" aria-label="Circunferência">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputAltura" class="form-label">Altura</label>
+                            <input type="number" class="form-control" id="inputAltura" required placeholder="Altura (cm)" aria-label="Altura">
+                        </div>
+                    </form>
+                </div>
+            <br>
+                <div class="line3">
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <label for="inputPeso" class="form-label">Peso</label>
+                            <input type="number" class="form-control" id="inputPeso" required placeholder="Peso (Kg)" aria-label="Peso">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputDate" class="form-label">Data Nascimento</label>
+                            <input type="date" class="form-control" id="inputDate" required placeholder="Data Nascimento" aria-label="Data Nascimento">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputSexo" class="form-label">Sexo</label>
+                            <select id="inputSexo" class="form-select">
+                                <option selected disabled>Escolha...</option>
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            <br>
+                <button class="btn mx-auto" type="submit" value="submit">Confira</button>
             </div>
+        </div>
+        <div id="hideMeAfter5Seconds">
+            <img src="pngwing.com.png" class="corredor animate__animated animate__fadeInLeftBig" alt="corredor">
         </div>
     </main>
 </body>
