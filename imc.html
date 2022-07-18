@@ -29,11 +29,11 @@
                     <form class="row g-3">
                         <div class="col-md-6">
                             <label for="inputName" class="form-label">Nome</label>
-                            <input type="text" class="form-control" required placeholder="Nome" aria-label="Nome">
+                            <input type="text" id="inputName" class="form-control" required placeholder="Nome" aria-label="Nome">
                         </div>
                         <div class="col-md-6">
                             <label for="inputEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" required placeholder="Email" aria-label="Email">
+                            <input type="email" id="inputEmail" class="form-control" required placeholder="Email" aria-label="Email">
                         </div>
                     </form>
                 </div>
@@ -42,11 +42,11 @@
                     <form class="row g-3">
                         <div class="col-md-6">
                             <label for="inputCircunf" class="form-label">Circunferência Abdominal</label>
-                            <input type="number" class="form-control" id="inputCircunf" required placeholder="Circunferência (cm)" aria-label="Circunferência">
+                            <input type="number" id="inputCircunf" class="form-control" required placeholder="Circunferência (cm)" aria-label="Circunferência">
                         </div>
                         <div class="col-md-6">
                             <label for="inputAltura" class="form-label">Altura</label>
-                            <input type="number" class="form-control" id="inputAltura" required placeholder="Altura (cm)" aria-label="Altura">
+                            <input type="number" id="inputAltura" class="form-control" required placeholder="Altura (cm)" aria-label="Altura">
                         </div>
                     </form>
                 </div>
@@ -55,29 +55,49 @@
                     <form class="row g-3">
                         <div class="col-md-4">
                             <label for="inputPeso" class="form-label">Peso</label>
-                            <input type="number" class="form-control" id="inputPeso" required placeholder="Peso (Kg)" aria-label="Peso">
+                            <input type="number" id="inputPeso"class="form-control" id="inputPeso" required placeholder="Peso (Kg)" aria-label="Peso">
                         </div>
                         <div class="col-md-4">
                             <label for="inputDate" class="form-label">Data Nascimento</label>
-                            <input type="date" class="form-control" id="inputDate" required placeholder="Data Nascimento" aria-label="Data Nascimento">
+                            <input type="date" id="inputDate" class="form-control" required placeholder="Data Nascimento" aria-label="Data Nascimento">
                         </div>
                         <div class="col-md-4">
                             <label for="inputSexo" class="form-label">Sexo</label>
                             <select id="inputSexo" class="form-select">
                                 <option selected disabled>Escolha...</option>
-                                <option>Masculino</option>
-                                <option>Feminino</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Feminino</option>
                             </select>
                         </div>
                     </form>
                 </div>
             <br>
-                <button class="btn mx-auto" type="submit" value="submit">Confira</button>
+                <button class="btn mx-auto" id="adicionar" type="submit" value="submit">Confira</button>
             </div>
         </div>
         <div id="hideMeAfter5Seconds">
             <img src="pngwing.com.png" class="corredor animate__animated animate__fadeInLeftBig" alt="corredor">
         </div>
+        <div class="fundo">
+            <div class="container-fluid" id="aqui">
+                
+            </div>
+        </div>
     </main>
 </body>
-</html>
+</html> <!--<div class="row">
+                    <div class="col-md-6">Olá -- nome --</div>
+                    <div class="col-md-6">Seu imc é: (imc)</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <br>
+                        <p>Você tem (idade) anos e encontra-se em um estado de (estado).</p>
+                        <p>Seu risco metabólico é (risco).</p>
+                        <p>Confira a imagem abaixo do seu imc -></p>
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <img class="gordo" src="istockphoto-1136879179-170667a.jpg" alt="indices">
+                    </div>
+                </div>-->
