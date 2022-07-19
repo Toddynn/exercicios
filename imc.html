@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="index.css">
     <script src="imc.js" defer></script>
     <title>IMC</title>
 </head>
-<nav class="navbar">
+<nav class="navbar ">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">area</a>
+        <a class="navbar-brand" href="index.html">
+            <img class="box" src="Private GIF.gif" alt="area" width="32" height="35"><span class="span">Area</span>
+        </a>
     </div>
 </nav>
 <body>
@@ -29,11 +32,11 @@
                     <form class="row g-3">
                         <div class="col-md-6">
                             <label for="inputName" class="form-label">Nome</label>
-                            <input type="text" id="inputName" class="form-control" required placeholder="Nome" aria-label="Nome">
+                            <input type="text" id="inputName" class="form-control" placeholder="Nome" required>
                         </div>
                         <div class="col-md-6">
                             <label for="inputEmail" class="form-label">Email</label>
-                            <input type="email" id="inputEmail" class="form-control" required placeholder="Email" aria-label="Email">
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required> 
                         </div>
                     </form>
                 </div>
@@ -42,11 +45,11 @@
                     <form class="row g-3">
                         <div class="col-md-6">
                             <label for="inputCircunf" class="form-label">Circunferência Abdominal</label>
-                            <input type="number" id="inputCircunf" class="form-control" required placeholder="Circunferência (cm)" aria-label="Circunferência">
+                            <input type="number" id="inputCircunf" class="form-control" placeholder="Circunferência (cm)" required>
                         </div>
                         <div class="col-md-6">
                             <label for="inputAltura" class="form-label">Altura</label>
-                            <input type="number" id="inputAltura" class="form-control" required placeholder="Altura (cm)" aria-label="Altura">
+                            <input type="number" id="inputAltura" class="form-control" placeholder="Altura (cm)" required>
                         </div>
                     </form>
                 </div>
@@ -55,15 +58,15 @@
                     <form class="row g-3">
                         <div class="col-md-4">
                             <label for="inputPeso" class="form-label">Peso</label>
-                            <input type="number" id="inputPeso"class="form-control" id="inputPeso" required placeholder="Peso (Kg)" aria-label="Peso">
+                            <input type="number" id="inputPeso" class="form-control" id="inputPeso" placeholder="Peso (Kg)" required>
                         </div>
                         <div class="col-md-4">
                             <label for="inputDate" class="form-label">Data Nascimento</label>
-                            <input type="date" id="inputDate" class="form-control" required placeholder="Data Nascimento" aria-label="Data Nascimento">
+                            <input type="date" id="inputDate" class="form-control" placeholder="Data Nascimento" required>
                         </div>
                         <div class="col-md-4">
                             <label for="inputSexo" class="form-label">Sexo</label>
-                            <select id="inputSexo" class="form-select">
+                            <select id="inputSexo" class="form-select" required>
                                 <option selected disabled>Escolha...</option>
                                 <option value="1">Masculino</option>
                                 <option value="2">Feminino</option>
@@ -79,25 +82,10 @@
             <img src="pngwing.com.png" class="corredor animate__animated animate__fadeInLeftBig" alt="corredor">
         </div>
         <div class="fundo">
-            <div class="container-fluid" id="aqui">
+            <div class="container-fluid" id="apresenta">
                 
             </div>
         </div>
     </main>
 </body>
-</html> <!--<div class="row">
-                    <div class="col-md-6">Olá -- nome --</div>
-                    <div class="col-md-6">Seu imc é: (imc)</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <br>
-                        <p>Você tem (idade) anos e encontra-se em um estado de (estado).</p>
-                        <p>Seu risco metabólico é (risco).</p>
-                        <p>Confira a imagem abaixo do seu imc -></p>
-                    </div>
-                    <div class="col-md-6">
-                        <br>
-                        <img class="gordo" src="istockphoto-1136879179-170667a.jpg" alt="indices">
-                    </div>
-                </div>-->
+</html>

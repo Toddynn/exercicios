@@ -1,17 +1,19 @@
 document.querySelector("#adicionar").addEventListener("click", calculaIMC);
 
 const nome = document.getElementById("inputName");
-const email = document.getElementById("inputEmail").value;
+const email = document.getElementById("inputEmail");
+const dataNasc = document.getElementById("inputDate");
 
 function calculaIMC(event){
     event.preventDefault();
 
+    let idade = moment().diff(dataNasc.value, 'years')
     let circunf = document.getElementById("inputCircunf").value;
     let select = document.getElementById("inputSexo");
     let sexo = select.options[select.selectedIndex].value;
-    let dataNasc = Number(document.getElementById("inputDate").value);
     let altura = Number(document.getElementById("inputAltura").value);
     let peso = Number(document.getElementById("inputPeso").value);
+    
     var imc = (peso / (altura * altura)).toFixed(2);
     var estado;
     var risco;
@@ -37,11 +39,6 @@ function calculaIMC(event){
             risco = "Crítico";
         }
     }
-
-    date = new Date();
-    const today = date.getDate();
-    var idade = today - dataNasc;
-
     if(idade<65){
         if(imc > 40){
             estado = "Obesidade Grau III";
@@ -97,7 +94,7 @@ function calculaIMC(event){
     texto.setAttribute('class', 'col-md-6');
     texto.textContent = `Você tem ${idade} anos e encontra-se em um estado de ${estado}.
                         Seu risco metabólico é ${risco}.
-                        Confira a imagem abaixo do seu IMC`;
+                        Confira a imagem abaixo do seu IMC.`;
     
     var texto2 = document.createElement("div");
     texto2.setAttribute('class', 'col-md-6');
@@ -112,6 +109,6 @@ function calculaIMC(event){
     linha2.appendChild(texto2);
     texto2.appendChild(imagem);
 
-    document.querySelector("#aqui").appendChild(linha);
-    document.querySelector("#aqui").appendChild(linha2);
+    document.querySelector("#apresenta").appendChild(linha);
+    document.querySelector("#apresenta").appendChild(linha2);
 }

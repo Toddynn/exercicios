@@ -14,6 +14,10 @@ header{
     padding-right: 0%;
 }
 
+.navbar-brand{
+    color: #E7DFDD;
+}
+
 img{
     max-width: 100%;
 }
@@ -34,19 +38,6 @@ h1{
     color: #E7DFDD;
 }
 
-h2{
-    font-size: 16px;
-    text-align: center;
-    color: #E7DFDD;
-}
-
-.p-3{
-    font-size: 2rem;
-    width: 100%;
-    height: 100%;
-    text-align: center; 
-}
-
 .btn{
     text-align: center;
     align-items: center;
@@ -57,10 +48,6 @@ h2{
     width: 100%;
     background-color: #4717F6;
     color: #E7DFDD;
-}
-
-.sub{
-    color: black;
 }
 
 footer{
@@ -120,4 +107,37 @@ footer{
         width: 0;
         height: 0;
     }
+}
+
+.span
+{
+    animation: appears 2s ease-in 5s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes appears{
+    to{
+        visibility: visible;
+    }
+}
+
+.box {
+    animation: circle 3s infinite;
+    clip-path: circle(75%);
+}
+
+@keyframes circle {
+    0% { clip-path: circle(0%); }
+    25% { clip-path: circle(70%); }
+    50% { clip-path: circle(50%); }
+    75% { clip-path: circle(25%); }
+    100% { clip-path: circle(0%); }
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+body::-webkit-scrollbar-button{
+    display: none;
 }
