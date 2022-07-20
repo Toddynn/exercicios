@@ -8,6 +8,7 @@ header{
     padding-top: 10px;
 }
 
+
 .navbar{
     background-color: black;
     padding-bottom: 0%;
@@ -140,4 +141,8 @@ body::-webkit-scrollbar{
 }
 body::-webkit-scrollbar-button{
     display: none;
+}
+
+.modal-backdrop{
+    visibility: hidden;
 }
