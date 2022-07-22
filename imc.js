@@ -40,16 +40,14 @@ function criaModal(){
         footerClose.setAttribute('type', 'button');
         footerClose.setAttribute('id', 'close-modal');
         footerClose.setAttribute('class', 'btn btn-danger');
-        footerClose.setAttribute('data-bs-dismiss', '#open-modal');
-        footerClose.setAttribute('data-bs-target', '#adicionar');
+        footerClose.setAttribute('data-bs-dismiss', 'modal');
         footerClose.textContent = "Fechar";
 
         var closeModal = document.createElement("button");
         closeModal.setAttribute('type', 'button');
         closeModal.setAttribute('id', 'close-modal');
         closeModal.setAttribute('class', 'btn-close');
-        closeModal.setAttribute('data-bs-dismiss', '#open-modal');
-        closeModal.setAttribute('data-bs-target', '#adicionar');
+        closeModal.setAttribute('data-bs-dismiss', 'modal');
 
         modal.appendChild(modalDialog);
             modalDialog.appendChild(modalContent);

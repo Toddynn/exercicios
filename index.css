@@ -146,3 +146,8 @@ body::-webkit-scrollbar-button{
 .modal-backdrop{
     visibility: hidden;
 }
+
+#open-modal{
+    position: relative;
+    right: 5000px;
+}
