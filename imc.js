@@ -181,7 +181,12 @@ function calculaIMC(event){
         linha2.appendChild(texto2);
         texto2.appendChild(imagem);
 
+        document.querySelector("#apresenta").innerHTML = "";
         document.querySelector("#apresenta").appendChild(linha);
         document.querySelector("#apresenta").appendChild(linha2);
     }
 }
+
+
+
+
